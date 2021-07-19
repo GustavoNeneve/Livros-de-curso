@@ -1,0 +1,487 @@
+/*
+
+  SENAC EAD - TED
+  autor: João Pedro Gaelzer / jpcoelho@senacrs.com.br
+  versão: 1.2 beta
+  Descrição:  estilos para versão impressa dos materiais criados pelo SENAC EAD
+              utilizando os templates de cada curso.
+
+*/
+/* ESTRUTURA PARA ELEMENTOS RELACIONADOS AOS BOTÕES E AJUDA DA IMPRESSÃO */
+#marcadaguaLogo { display: none !important; }
+
+.grupo-imprimir {
+    display: block;
+    text-align: right;
+}
+
+.grupo-imprimir button.bto-imprimir, .grupo-imprimir button.bto-ajuda {
+    border: 0px none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+.grupo-imprimir button.bto-imprimir {
+  /*border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;*/
+  position: relative;
+  padding-top: 11.4px;
+  padding-bottom: 11.4px;
+  padding-left: 11.4px;
+  padding-right: 11.4px;
+}
+
+.bto-imprimir .bto-lettering {
+  top: -2px;
+  position: relative;
+}
+.bto-imprimir .fa-print {
+  font-size: 20px;
+  margin-right: 3px;
+}
+.grupo-imprimir button.bto-ajuda  {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  float: right;
+  position: relative;
+  padding-top: 8.4px;
+  padding-bottom: 10.4px;
+  padding-left: 11.4px;
+  padding-right: 11.4px;
+}
+
+
+.grupo-imprimir button.bto-ajuda span.fa.fa-comment {
+    font-size: 25px;
+}
+.grupo-imprimir button.bto-ajuda span.fa.fa-question {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 14px;
+}
+
+
+
+.pdfobs {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 20px;
+    overflow: auto;
+    z-index: 99999;
+}
+.pdfobs a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.pdfobs .container {
+    max-width: 640px;
+}
+.destaquePDFobs {
+
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn.btn-link.closePDFobs {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+}
+/* FIM-/ESTRUTURA PARA ELEMENTOS RELACIONADOS AOS BOTÕES E AJUDA DA IMPRESSÃO */
+
+/*------------------------------*/
+
+/* CLASSE PARA EXIBIR ELEMENTO APENAS NA IMPRESSÃO */
+.only-print, .apenas-print, .apenas-imprimir {
+  display: none;
+}
+/* FIM-/CLASSE PARA EXIBIR ELEMENTO APENAS NA IMPRESSÃO */
+
+
+@media print { /* INICIALIZA A MEDIA QUERY PRINT */
+  /* CONFIGURAÇÃO DO DOCUMENTO */
+  html, body {
+    height: 100%;
+    padding-left: unset;
+    padding-right: unset;
+  }
+
+
+  header {
+    display: none;
+  }
+  .panel-body p, .caixa-destaque p {
+    text-indent: unset;
+  }
+
+   .fundo-tecnicos {
+     position: relative;
+     z-index: 2;
+   }
+  @page {
+    size: A4;
+    margin-top: 3cm;
+    margin-bottom: 2cm;
+    margin-right: 2cm;
+    margin-left: 3cm;
+  }
+
+  #marcadaguaLogo {
+      display: block !important;
+      position: fixed;
+      top: 1cm;
+      left: 0px;
+      width: auto;
+      height:auto;
+      opacity: 0.07;
+      z-index: 1;
+   }
+/* FIM-/CONFIGURAÇÃO DO DOCUMENTO */
+
+/*------------------------------*/
+
+/* OVERHIDE DAS TAGS DO TEMPLATE E BOOTSTRAP */
+
+  .collapse, .panel-collapse.collapse {
+    display: block !important;
+    height: unset !important;
+}
+h1 {
+      border-bottom: 1px solid #e6e6e6;
+      padding-bottom: 10px;
+      font-size: 25pt;
+}
+.pagina {
+  border-top: none;
+  margin-top: 10px;
+  page-break-after: always;
+  padding: 0px;
+}
+
+
+h2 {
+  font-size: 22pt;
+}
+h3 {
+  font-size: 20pt;
+}
+h4 {
+  font-size: 18pt;
+}
+h5 {
+  font-size: 16pt;
+}
+  h1 {
+    /*page-break-before: always;*/
+
+    page-break-inside: avoid;
+  }
+  h2, h3, h4 {
+    page-break-inside: avoid;
+  }
+  .panel {
+    page-break-inside: avoid;
+  }
+  ul, table {
+    page-break-inside: avoid;
+  }
+  p {
+    font-size: 12pt;
+    font-family: arial, serif;
+    line-height: 0.75cm;
+    text-indent: 1cm;
+    widows: 4;
+    orphans: 3;
+    text-align: justify;
+    text-align-last: left;
+  }
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  p:first-line,
+  div:first-line,
+  blockquote:first-line,
+  li:first-line {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+
+  .fundo-tecnicos[data-titulo]::before {
+      content: attr(data-titulo);
+      font-size: 12pt;
+  }
+  img, .equacoes, figure, .print-proteger {
+	  page-break-inside: avoid;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  a[data-toggle='collapse']:after {
+    content: "";
+  }
+  .fundo-tecnicos {
+    background: none;
+    background-position: 0;
+    padding-left:0;
+    padding-bottom: 1em;
+    border-radius: 0;
+    margin-bottom: 0;
+    border-bottom: 0px none;
+    padding-bottom: 0px;
+    width: auto !important;
+  }
+
+  .postit {
+    padding: 0px;
+    border-top: unset;
+    background-color: unset;
+    width: 100%;
+    margin: 1.4em 0 1.4em 0;
+    line-height: 0.75cm;
+    vertical-align: unset;
+    text-align: justify;
+    text-align-last: left;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    display: block;
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .carousel-indicators, .carousel-control, .btn-group, .nav-tabs, .nav-pills, .dropdown-menu, nav .pagination, nav .pager, .progress, .navbar, iframe, .embed-responsive, .modal-footer, .pagination  {
+    display: none;
+  }
+
+  .modal.fade {
+    display: block;
+    position: relative;
+    opacity: 1;
+  }
+  .modal.fade .modal-dialog {
+    width: 100%;
+  }
+  .modal.fade .modal-dialog .modal-content {
+    box-shadow: unset;
+    border: ;
+    border-radius: 0px;
+    background: none;
+  }
+  .tab-content .tab-pane, .tab-content .tab-pane ul, .tab-content > .tab-pane, .tab-content > .tab-pane.fade {
+    display: block !important;
+  }
+  .tab-content .tab-pane ul li{
+    display: list-item;
+  }
+
+  .taqb-content {
+    page-break-inside: avoid;
+  }
+  .tab-content > .tab-pane.fade {
+    opacity: 1;
+  }
+  .carousel-inner .item {
+    display: block;
+    transition: unset;
+    transform: unset;
+    position: relative;
+    left: 0px;
+    page-break-inside: avoid;
+    page-break-after: always;
+  }
+
+  .carousel-inner .item.active.left {
+    transform: translate3d(0,0,0) !important;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    color: #000;
+    text-shadow: unset;
+  }
+  .paper {
+    background: none;
+    font-size: 12pt;
+    font-family: arial, serif;
+    width: 70%;
+    line-height: unset;
+    margin: unset;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #ccc;
+    background-color: none;
+    padding: 25pt;
+  }
+  .postit {
+    padding: 20px;
+    border-top: unset;
+    background-color: none;
+    border-width: 3px;
+    width: 400px;
+    margin: 10px auto;
+    -ms-transform: unset;
+    -webkit-transform: unset;
+    transform: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    font-size: 12pt;
+    font-family: arial;
+    line-height: unset;
+  }
+  .jornal {
+    background-image: unset;
+    width: 100%;
+    margin: 10px auto;
+    padding: 35px;
+    font-size: 12pt;
+    color: #404040;
+    text-align: justify;
+    border: 3px solid #d0d0d0;
+    font-family: arial, serif;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset;
+    -ms-transform: unset;
+    -webkit-transform: unset;
+    transform: unset;
+    max-width: 650px;
+    background-color: none;
+
+  }
+  .fundo-tecnicos * > header {
+    display: block;
+  }
+  .fundo-tecnicos * > h1 {
+    padding-left: 0px;
+    background: none;
+    margin-left: 0px;
+    margin-right: unset;
+  }
+  h1.cor-padrao-curso-texto {
+    max-width: unset;
+    width: 100%;
+
+  }
+  h1::before, h2::before {
+    width: 0px !important;
+    height: 0px !important;
+  }
+  .caixa_destaque {
+    top: unset;
+    left: unset;
+    right: unset;
+    bottom: unset;
+  }
+  .modal, .modal.fade, .modal-body {
+    height: auto;
+    max-height: unset;
+  }
+  .parallax-window {
+    display: none !important;
+  }
+  .telas {
+    overflow: hidden !important;
+    height: auto !important;
+    max-height: unset !important;
+    padding-top: unset !important;
+  }
+  .caixa-aling-right, .caixa-aling-left {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+  .modal {
+    page-break-inside: avoid;
+  }
+  .modal.fade .modal-dialog {
+     -webkit-transform: unset !important;
+    -ms-transform:unset !important;
+    -o-transform: unset !important;
+     transform: unset !important;
+    -webkit-transition: unset !important;
+    -moz-transition:unset !important;
+    -o-transition: -unset !important;
+     transition: unset !important
+   }
+  .close {
+    display: none;
+  }
+  .break-inside-avoid {
+	  page-break-inside: avoid;
+  }
+
+  div#booklet {
+      margin-left: unset;
+      margin-right: unset;
+      max-width: unset;
+      background-color: unset;
+      border: unset;
+      padding: unset;
+      margin-top: unset;
+  }
+ /* FIM-/OVERHIDE DAS TAGS DO TEMPLATE E BOOTSTRAP */
+
+ /*-----------------------------*/
+
+ /* SUMIR COM TUDO QUE NÃO ESTEJA NA DIV .fundo-tecnicos */
+ body > *:not(#booklet) {
+    display: none;
+  }
+ /* FIM-/SUMIR COM TUDO QUE NÃO ESTEJA NA DIV .fundo-tecnicos */
+
+ /* ------------------------------------- */
+
+ /* TAGS .print e .no-print */
+ .print, .only-print, .apenas-print, .imprimir, .apenas-imprimir {
+    display: block !important;
+  }
+  .acessivel.print, .acessivel.imprimir {
+    width: unset;
+    height: unset;
+    padding: unset;
+    margin: unset;
+    border: unset;
+    font-size: unset;
+    overflow: unset;
+  }
+  .no-print, .nao-imprimir {
+    display: none !important;
+  }
+
+  .quebrar-depois, .break-after {
+    page-break-after: always;
+  }
+  .quebrar-antes, .break-before {
+    page-break-before: always;
+  }
+  .evitar-quebra, .break-inside-avoid {
+    page-break-inside: avoid;
+  }
+ /* FIM-/TAGS .print e .no-print */
+
+ /*------------------------------*/
+}
