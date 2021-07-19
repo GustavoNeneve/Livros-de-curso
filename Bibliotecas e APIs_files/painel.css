@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Conv_RobotoCondensed-Regular';
+	src: url('fonts/RobotoCondensed-Regular.eot');
+	src: local('☺'), url('fonts/RobotoCondensed-Regular.woff') format('woff'), url('fonts/RobotoCondensed-Regular.ttf') format('truetype'), url('fonts/RobotoCondensed-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_RobotoCondensed-Light';
+	src: url('fonts/RobotoCondensed-Light.eot');
+	src: local('☺'), url('fonts/RobotoCondensed-Light.woff') format('woff'), url('fonts/RobotoCondensed-Light.ttf') format('truetype'), url('fonts/RobotoCondensed-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_RobotoCondensed-Bold';
+	src: url('fonts/RobotoCondensed-Bold.eot');
+	src: local('☺'), url('fonts/RobotoCondensed-Bold.woff') format('woff'), url('fonts/RobotoCondensed-Bold.ttf') format('truetype'), url('fonts/RobotoCondensed-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.painel{
+	 /*font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;*/
+	 font-weight:lighter;
+	 color:#fff;
+	 position:relative;
+	 margin:0 auto;
+	 width:630px;	
+ }
+  .painel .aba{
+	  position:static;
+	  float:left;	
+	    
+  }
+ .painel .aba label{
+	 z-index:1;
+	 position:relative;
+	 display:block;	
+	 width:315px;
+	 height:50px;
+	 line-height:50px;
+			font-weight:400;
+			font-family: 'Conv_RobotoCondensed-Regular', Arial, sans-serif;
+	 text-align:center;
+	 background-color:#7d3d98;
+	 border-top-left-radius:20px;
+	 border-top-right-radius:20px;
+	 	  -webkit-box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:    0px 8px 10px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:         0px 8px 10px 0px rgba(0, 0, 0, 0.1);   
+ }
+ .painel .aba input[type=radio]{
+	 position:absolute;
+	 margin-top:-100px;
+ }
+  .painel .aba .conteudo{
+	  width:610px;
+	  z-index:99;
+	  position:absolute;
+	  display:none;
+	  top:50px;
+			font-weight:400;
+			font-family: 'Conv_RobotoCondensed-Regular', Arial, sans-serif;
+	  left:0;
+	  padding:10px;
+	  background-color:#9B59B6;
+	  min-height:80px;
+	  border-bottom-left-radius:20px;
+	  border-bottom-right-radius:20px;
+	  	  -webkit-box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:    0px 8px 8px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:         0px 8px 8px 0px rgba(0, 0, 0, 0.1);   
+  }
+  .painel .aba input[type=radio]:checked ~ label{
+	  background-color:#9B59B6;
+  }
+   .painel .aba input[type=radio]:checked ~ label ~ .conteudo{
+	  display:block;	  
+  }/* CSS Document */
+
