@@ -1,0 +1,814 @@
+.foot{
+	display:none;
+}
+html, body{
+	 background-color: rgb(138, 66, 168);
+	 background-image:url("../img/fundo.jpg");
+}
+.primaryContainer {
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    width: 100%;
+    background-image:url("../img/fundo.jpg");
+    background-attachment: scroll;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: rgb(138, 66, 168);
+    position: relative;
+    background-position: 0% 0%;
+    background-repeat: no-repeat no-repeat;
+}
+
+#box {
+    float: left;
+    height: 100px;
+    clear: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image:url("../img/header.jpg");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+	z-index:999;
+}
+
+#text {
+    float: left;
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 130px 0px 0px 0%;
+    clear: none;
+    min-height: 30px;
+    font-family: Roboto;
+    color: rgb(255, 255, 255);
+    min-width: 0px;
+}
+
+#box1 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 399px;
+    position: absolute;
+    /*top: 211px;
+    left: 14.631579%;*/
+	top: 678px;
+    left: 53.768914%;
+    background-image:url("../img/bt01.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box1:hover,#box1:focus {
+    background-image:url("../img/bt01.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box2 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 442px;
+    min-height: 50px;
+    position: absolute;
+    top: 328px;
+    left: 6.973684%;
+    background-image:url("../img/bt02.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box2:hover,#box2:focus {
+    background-image:url("../img/bt02.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box3 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 473px;
+    min-height: 50px;
+    position: absolute;
+    top: 451px;
+    left: 5.712171%;
+    background-image:url("../img/bt03.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box3:hover,#box3:focus {
+    background-image:url("../img/bt03.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0px -100%;
+    background-repeat: repeat repeat;
+}
+
+#image {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    clear: both;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 170.5px;
+    left: 31.168586%;
+}
+
+#box4 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 436px;
+    min-height: 50px;
+    position: absolute;
+    top: 576px;
+    left: 11.856908%;
+    background-image:url("../img/bt04.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box4:hover,#box4:focus {
+    background-image:url("../img/bt04.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box5 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 399px;
+    min-height: 50px;
+    position: absolute;
+    top: 680px;
+    left: 21.95477%;
+    background-image:url("../img/bt05.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box5:hover,#box5:focus {
+    background-image:url("../img/bt05.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box6 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 423px;
+    position: absolute;
+    /*top: 678px;
+    left: 53.768914%;*/
+	top: 211px;
+    left: 14.631579%;
+    background-image:url("../img/bt06.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box6:hover,#box6:focus {
+    background-image:url("../img/bt06.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box7 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 450px;
+    position: absolute;
+    top: 580px;
+    left: 62.564967%;
+    background-image:url("../img/bt07.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    display: block;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box7:hover,#box7:focus {
+    background-image:url("../img/bt07.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box8 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 344px;
+    position: absolute;
+    top: 452px;
+    left: 67.381579%;
+    background-image:url("../img/bt08.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box8:hover,#box8:focus {
+    background-image:url("../img/bt08.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    width: 344px;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box9 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 360px;
+    min-height: 50px;
+    position: absolute;
+    top: 330px;
+    left: 66.747533%;
+    background-image:url("../img/bt09.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box9:hover,#box9:focus {
+    background-image:url("../img/bt09.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+#box10 {
+    float: left;
+    height: 65px;
+    clear: both;
+    width: 506px;
+    position: absolute;
+    top: 212px;
+    left: 60.864309%;
+    background-image:url("../img/bt10.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat repeat;
+}
+
+#box10:hover,#box10:focus {
+    background-image:url("../img/bt10.png");
+    background-attachment: scroll;
+    -webkit-background-size: auto;
+    background-size: auto;
+    background-position: 0% -100%;
+    background-repeat: repeat repeat;
+}
+
+@media only screen and (max-width: 1900px) {
+    #box5 {
+        top: 680px;
+        left: 19.849507%;
+    }
+
+    #box {
+        background-image:url("../img/header.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: auto;
+        background-size: auto;
+        background-color: rgb(255, 255, 255);
+        background-position: 50% 0%;
+        background-repeat: repeat repeat;
+    }
+
+    .primaryContainer {
+        background-image:url("../img/fundo.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-color: rgb(138, 66, 168);
+        background-position: 0% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    #text {
+        width: 100%;
+        margin: 130px 0px 0px 0%;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    #image {
+        height: auto;
+        width: auto;
+        max-width: 38.459961%;
+        top: 174.5px;
+        left: 34.792969%;
+    }
+
+    #box1 {
+        top: 181px;
+        left: 14.630859%;
+    }
+
+    #box10 {
+        top: 182px;
+        left: 60.864258%;
+    }
+
+    #box2 {
+        top: 288px;
+        left: 6.973633%;
+    }
+
+    #box9 {
+        top: 290px;
+        left: 67.99707%;
+    }
+
+    #box3 {
+        top: 401px;
+        left: 4.461914%;
+    }
+
+    #box8 {
+        top: 402px;
+        left: 69.255859%;
+    }
+
+    #box4 {
+        top: 526px;
+        left: 11.856445%;
+    }
+
+    #box7 {
+        top: 530px;
+        left: 62.564453%;
+    }
+
+    #box5 {
+        top: 640px;
+        left: 19.848633%;
+    }
+
+    #box6 {
+        top: 638px;
+        left: 53.768555%;
+    }
+
+    #box {
+        background-image:url("../img/header.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: auto;
+        background-size: auto;
+        background-color: rgb(255, 255, 255);
+        background-position: 50% 0%;
+        background-repeat: repeat repeat;
+    }
+
+    .primaryContainer {
+        background-image:url("../img/fundo.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-color: rgb(138, 66, 168);
+        background-position: 0% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    #text {
+        margin: 130px 0px 0px 0%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #box3 {
+        top: 401px;
+        left: 2.316964%;
+    }
+
+    #box2 {
+        top: 288px;
+        left: 4.116071%;
+    }
+
+    #box1 {
+        top: 181px;
+        left: 8.915179%;
+    }
+
+    #text {
+        clear: none;
+        margin: 130px 0px 0px 0%;
+    }
+
+    #box10 {
+        top: 182px;
+        left: 61.578125%;
+    }
+
+    #box9 {
+        top: 290px;
+        left: 68.710938%;
+    }
+
+    #box7 {
+        top: 530px;
+        left: 61.84933%;
+    }
+
+    #box6 {
+        top: 638px;
+        left: 53.767857%;
+    }
+
+    #box5 {
+        top: 640px;
+        left: 19.848214%;
+    }
+
+    #image {
+        top: 174.5px;
+        left: 36.386781%;
+    }
+
+    #box {
+        background-image:url("../img/header.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: auto;
+        background-size: auto;
+        background-color: rgb(255, 255, 255);
+        background-position: 50% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .primaryContainer {
+        background-image:url("../img/fundo.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-color: rgb(138, 66, 168);
+        background-position: 0% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #image {
+        top: 94.5px;
+        left: 26.492187%;
+        height: auto;
+        width: auto;
+        max-width: 51.134115%;
+    }
+
+    #box1 {
+        top: 427px;
+        left: 8.259557%;
+    }
+
+    #box2 {
+        top: 508.046875px;
+        left: 4.450047%;
+    }
+
+    #box3 {
+        top: 591px;
+        left: 2.183982%;
+    }
+
+    #box4 {
+        top: 675px;
+        left: 5.306051%;
+    }
+
+    #box5 {
+        top: 759px;
+        left: 8.659709%;
+    }
+
+    #box6 {
+        top: 759px;
+        left: 50.331262%;
+    }
+
+    #box7 {
+        top: 673px;
+        left: 50.331262%;
+    }
+
+    #box8 {
+        top: 591px;
+        left: 50.05863%;
+    }
+
+    #box9 {
+        top: 508.046875px;
+        left: 50.05863%;
+    }
+
+    #box10 {
+        top: 427px;
+        left: 49.938438%;
+    }
+
+    #text {
+        margin: 108px 0px 0px 0%;
+        clear: none;
+    }
+
+    #box {
+        height: 80px;
+        background-image:url("../img/header.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-color: rgb(255, 255, 255);
+        background-position: 50% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .primaryContainer {
+        background-image:url("../img/fundo.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: contain;
+        background-size: contain;
+        background-color: rgb(138, 66, 168);
+        background-position: 0% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #box10 {
+        top: 1120px;
+        left: 26.74392%;
+    }
+
+    #box9 {
+        top: 1046.046875px;
+        left: 26.74392%;
+    }
+
+    #box8 {
+        top: 973px;
+        left: 26.837082%;
+    }
+
+    #box7 {
+        top: 902px;
+        left: 26.74392%;
+    }
+
+    #box6 {
+        top: 830px;
+        left: 26.74392%;
+    }
+
+    #box1 {
+        top: 468.625px;
+        left: 26.74392%;
+    }
+
+    #box2 {
+        top: 542.046875px;
+        left: 26.74392%;
+    }
+
+    #box3 {
+        top: 614px;
+        left: 26.74392%;
+    }
+
+    #box4 {
+        top: 686px;
+        left: 26.74392%;
+    }
+
+    #box5 {
+        top: 758px;
+        left: 26.74392%;
+    }
+
+    #image {
+        top: 93.5px;
+        left: 15.757935%;
+        height: auto;
+        width: auto;
+        max-width: 67.973623%;
+    }
+
+    #text {
+        margin: 108px 0px 0px 0%;
+        clear: none;
+        width: 100%;
+    }
+
+    .primaryContainer {
+        background-image:url("../img/fundo.jpg");
+        background-attachment: scroll;
+        -webkit-background-size: auto;
+        background-size: auto;
+        background-color: rgb(138, 66, 168);
+        background-position: 0% 0%;
+        background-repeat: no-repeat no-repeat;
+    }
+}
+
+@media only screen and (max-width: 898px) {
+    #box10 {
+        top: 1080px;
+        left: 26.742224%;
+    }
+
+    #box9 {
+        top: 1006.046875px;
+        left: 26.742224%;
+    }
+
+    #box8 {
+        top: 933px;
+        left: 26.835754%;
+    }
+
+    #box7 {
+        top: 862px;
+        left: 26.742224%;
+    }
+
+    #box6 {
+        top: 790px;
+        left: 26.742224%;
+    }
+
+    #box5 {
+        top: 718px;
+        left: 26.742224%;
+    }
+
+    #box4 {
+        top: 646px;
+        left: 26.742224%;
+    }
+
+    #box3 {
+        top: 574px;
+        left: 26.742224%;
+    }
+
+    #image {
+        top: 93.5px;
+        left: 15.757042%;
+    }
+
+    #box2 {
+        top: 502.046875px;
+        left: 26.742224%;
+    }
+
+    #box1 {
+        top: 428.625px;
+        left: 26.742224%;
+    }
+}
+
+@media only screen and (max-width: 698px) {
+    #box1 {
+        top: 448.625px;
+        left: 7.975913%;
+    }
+
+    #box2 {
+        top: 522.046875px;
+        left: 7.975913%;
+    }
+
+    #box3 {
+        top: 594px;
+        left: 7.973675%;
+    }
+
+    #box4 {
+        top: 666px;
+        left: 7.971436%;
+    }
+
+    #box5 {
+        top: 738px;
+        left: 7.971436%;
+    }
+
+    #box6 {
+        top: 810px;
+        left: 7.971436%;
+    }
+
+    #box7 {
+        top: 882px;
+        left: 7.971436%;
+    }
+
+    #box8 {
+        top: 953px;
+        left: 8.069932%;
+        display: block;
+    }
+
+    #box9 {
+        top: 1026.046875px;
+        left: 7.971436%;
+        display: block;
+    }
+
+    #box10 {
+        top: 1100px;
+        left: 7.971436%;
+        display: block;
+    }
+
+    #image {
+        height: 461px;
+        width: 536px;
+        max-width: none;
+        top: 124.5px;
+        left: 14.321987%;
+    }
+
+    #text {
+        margin-top: 101px;
+        margin-left: 0.77229585%;
+        clear: none;
+        width: 100%;
+    }
+}
+

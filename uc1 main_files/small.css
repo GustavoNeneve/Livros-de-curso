@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+.acessivel{
+	width:inherit;
+	height:inherit;
+	padding:auto;
+	margin:inherit;
+	border:inherit;
+	font-size:inherit;
+	overflow:inherit;
+}
+.acessivel .titulo{
+	font-size:0;
+}
+html,body{
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	background-image:none;
+	margin:0;
+	padding:0;
+}
+#box{
+	width:100%;
+	color:#fff;
+	margin:0;
+	background-color:#000;
+	text-align:center;	
+	height:auto;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size:0.9em;
+	top:0em;
+	padding:2em;
+	font-weight:bold;
+	background-image:none;
+	position:relative;
+}
+#primaryContainer{
+	width:101%;
+	height:100%;
+	margin-left:-0.2em;
+	padding:0;
+	top:0em;
+	margin-top:0;
+	background-image:none;
+	background-color:#fff;
+	position:relative;
+	clear:both;
+	
+}
+#primaryContainer img{
+	display:none;
+}
+#primaryContainer p{	
+	padding:0;
+	font-size:0.9em;
+	width:80%;		
+	position:relative;	
+	bottom:1em;
+	background-color: rgb(138, 66, 168);
+	width:100%;
+	padding:1em;
+	height:auto;
+	line-height:1.2em;
+	top:-7em;
+	margin-bottom:-6.9em;
+}
+#primaryContainer #box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box10{
+	background-image:none;
+	display:block;
+	margin:2px;	
+	width:100%;
+	position:relative;
+	top:0;
+	left:0;
+	font-size:0.82em;
+	padding:1.2em;
+	background-color:#eee;
+	line-height:1.2em;
+	height:auto;
+	text-align:center;font-weight:300;
+}
+#primaryContainer #box1:focus,#box2:focus,#box3:focus,#box4:focus,#box5:focus,#box6:focus,#box7:focus,#box8:focus,#box9:focus,#box10:focus{
+	background-image:none;
+	display:block;
+	background-color:rgba(160,92,205,1.00);
+	color:#fff;
+	width:100%;
+	
+}
+#primaryContainer #box1:hover,#box2:hover,#box3:hover,#box4:hover,#box5:hover,#box6:hover,#box7:hover,#box8:hover,#box9:hover,#box10:hover{
+	background-image:none;
+	display:block;
+	background-color:rgba(160,92,205,1.00);
+	color:#fff;
+	width:100%;
+}
+.foot{
+	padding:1em;
+	background-color:#000;
+	text-align:center;
+	border-top:0.1em #fff solid;
+	clear:both;
+	display:block;
+}
